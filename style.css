@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @font-face {
-	font-family: "SF";
-	font-weight: 400;
-	src: url(fonts/SF-Pro.ttf) format('truetype');
+    font-family: 'SF Pro';
+    src: url('https://slavaios.github.io/crm-t-bank/fonts/SF-Pro.ttf');
 }
 
 :root {
