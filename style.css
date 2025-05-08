@@ -6,314 +6,314 @@
 }
 
 :root {
-	--story-bg-color: #c1aea0;
-	--story-btn-bg-color: #ffdd2c;
-	--text-toneless-color: #333333;
+    --story-bg-color: #c1aea0;
+    --story-btn-bg-color: #ffdd2c;
+    --text-toneless-color: #333333;
 }
 
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .dialog {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
 }
 
 .dialog>.content {
-	flex-grow: 1;
-	display: flex;
-	justify-content: center;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .dialog>.footer {
-	padding: 12px 24px;
-	user-select: none;
+    padding: 12px 24px;
+    user-select: none;
 }
 
 .dialog>.footer>.copyright {
-	font-family: 'Arial', sans-serif;
-	color: var(--text-toneless-color);
-	font-size: 14px;
-	font-weight: 400;
-	text-align: center;
-	opacity: 0.72;
+    font-family: 'Arial', sans-serif;
+    color: var(--text-toneless-color);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    opacity: 0.72;
 }
 
 .dialog>.backdrop {
-	display: none;
+    display: none;
 }
 
 .dialog>.backdrop>.img {
-	display: none;
+    display: none;
 }
 
 @media (min-width: 576px) {
-	.dialog>.backdrop {
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		display: block;
-		width: 100%;
-		height: 100%;
-		z-index: -1;
-		background-color: var(--story-bg-color);
-	}
-	
-	.dialog>.backdrop>.img {
-		position: relative;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		z-index: 0;
-		display: block;
-		width: 100%;
-		height: 100%;
-		filter: blur(64px);
-		background-image: url(img/crisis-1.png);
-		background-size: 100% 100%;
-		background-repeat: no-repeat;
-		background-position: center center;
-		transition: background-image 0.5s ease-in-out;
-	}
+    .dialog>.backdrop {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: var(--story-bg-color);
+    }
+
+    .dialog>.backdrop>.img {
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        filter: blur(64px);
+        background-image: url('https://slavaios.github.io/crm-t-bank/img/crisis-1.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        transition: background-image 0.5s ease-in-out;
+    }
 }
 
 .story-slider {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 @media (min-width: 576px) {
-	.story-slider {
-		padding: 32px;
-	}
+    .story-slider {
+        padding: 32px;
+    }
 }
 
 .story-slider .action {
-	display: none;
+    display: none;
 }
 
 @media (min-width: 576px) {
-	.story-slider .action {
-		flex-grow: 1;
-		display: flex;
-		align-items: center;
-	}
+    .story-slider .action {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+    }
 }
 
 .story-slider .action>button {
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	width: 32px;
-	height: 32px;
-	border-radius: 50%;
-	background-color: rgba(0, 0, 0, .64);
-	border: 0;
-	appearance: none;
-	padding: 0;
-	cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .64);
+    border: 0;
+    appearance: none;
+    padding: 0;
+    cursor: pointer;
 }
 
 .story-slider .action>button:hover {
-	background-color: rgba(0, 0, 0, .88);
+    background-color: rgba(0, 0, 0, .88);
 }
 
 .story-slider .action[aria-disabled=true]>button {
-	visibility: hidden;
+    visibility: hidden;
 }
 
 .story-slider .action[aria-disabled=false]>button {
-	visibility: visible;
+    visibility: visible;
 }
 
 .story-slider .action>button.prev>svg {
-	margin-left: -2.5px;
+    margin-left: -2.5px;
 }
 
 .story-slider .action>button.next>svg {
-	margin-left: 2.5px;
+    margin-left: 2.5px;
 }
 
 .story-slider .action__left {
-	justify-content: flex-end;
-	padding-right: 64px;
+    justify-content: flex-end;
+    padding-right: 64px;
 }
 
 .story-slider .action__right {
-	justify-content: flex-start;
-	padding-left: 64px;
+    justify-content: flex-start;
+    padding-left: 64px;
 }
 
 .story-slider-wrapper {
-	/* width: 100%; */
+    /* width: 100%; */
 }
 
 .story-slider-content {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	border-radius: 16px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
 }
 
 @media (min-width: 576px) {
-	.story-slider-content {
-		max-width: 420px;
-		max-height: 750px;
-		box-shadow: 0 0 32px 4px rgba(0, 0, 0, .12);
-	}
+    .story-slider-content {
+        max-width: 420px;
+        max-height: 750px;
+        box-shadow: 0 0 32px 4px rgba(0, 0, 0, .12);
+    }
 }
 
 .story-slider-progress {
-	position: absolute;
-	top: 0 !important;
-	right: 0;
-	bottom: unset !important;
-	left: 0;
-	display: flex;
-	gap: 8px;
-	padding: 12px 16px;
-	z-index: 2;
+    position: absolute;
+    top: 0 !important;
+    right: 0;
+    bottom: unset !important;
+    left: 0;
+    display: flex;
+    gap: 8px;
+    padding: 12px 16px;
+    z-index: 2;
 }
 
 .story-slider-progress>.swiper-pagination-bullet {
-	flex: 1 0 24px;
-	height: 2px;
-	margin: 0 !important;
-	border-radius: 8px;
-	background-color: rgba(255, 255, 255, .42);
-	opacity: unset !important;
+    flex: 1 0 24px;
+    height: 2px;
+    margin: 0 !important;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, .42);
+    opacity: unset !important;
 }
 
 .story-slider-progress>.swiper-pagination-bullet[aria-current=true] {
-	background-color: #FFFFFF;
+    background-color: #FFFFFF;
 }
 
 .story-slider-slides {
-	position: relative;
-	display: flex;
-	border-radius: 16px;
-	background-color: var(--story-bg-color);
-	overflow: hidden;
-	z-index: 0;
+    position: relative;
+    display: flex;
+    border-radius: 16px;
+    background-color: var(--story-bg-color);
+    overflow: hidden;
+    z-index: 0;
 }
 
 .story-slide {
-	flex: 0 0 auto;
-	position: relative;
-	width: 100%;
-	height: 100%;
+    flex: 0 0 auto;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .story-slide .cover {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	border-radius: 16px;
-	z-index: 1;
-	background-size: cover;
-	background-position: center center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    z-index: 1;
+    background-size: cover;
+    background-position: center center;
 }
 
 .story-slide:nth-child(1) .cover {
-	background-image: url(img/crisis-1.png);
+    background-image: url('https://slavaios.github.io/crm-t-bank/img/crisis-1.png');
 }
 
 .story-slide:nth-child(2) .cover {
-	background-image: url(img/crisis-2.png);
+    background-image: url('https://slavaios.github.io/crm-t-bank/img/crisis-2.png');
 }
 
 .story-slide:nth-child(3) .cover {
-	background-image: url(img/crisis-3.png);
+    background-image: url('https://slavaios.github.io/crm-t-bank/img/crisis-3.png');
 }
 
 .story-slide:nth-child(4) .cover {
-	background-image: url(img/crisis-4.png);
+    background-image: url('https://slavaios.github.io/crm-t-bank/img/crisis-4.png');
 }
 
 .story-slide:nth-child(5) .cover {
-	background-image: url(img/crisis-5.png);
+    background-image: url('https://slavaios.github.io/crm-t-bank/img/crisis-5.png');
 }
 
 .story-slide .content {
-	position: relative;
-	z-index: 1;
-	user-select: none;
-	padding-top: 24px;
+    position: relative;
+    z-index: 1;
+    user-select: none;
+    padding-top: 24px;
 }
 
 .story-slide .content>h3 {
-	margin: 0;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 900;
-	font-size: 1.5vw;
-	line-height: 1.25;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.5vw;
+    line-height: 1.25;
 }
 
 .story-slide .content>p {
-	margin: 16px 0 0 0;
-	font-family: 'SF';
-	font-weight: 400;
-	font-size: 1.05vw;
-	line-height: 1.25;
+    margin: 16px 0 0 0;
+    font-family: 'SF';
+    font-weight: 400;
+    font-size: 1.05vw;
+    line-height: 1.25;
 }
 
 .story-slide .content>a {
-	display: inline-block;
-	padding: 16px 32px;
-	border-radius: 32px;
-	margin: 0;
-	margin-top: 16px;
-	border: 0;
-	background-color: var(--story-btn-bg-color);
-	color: #000000;
-	font-family: 'SF';
-	font-size: 1vw;
-	text-decoration: none;
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 32px;
+    margin: 0;
+    margin-top: 16px;
+    border: 0;
+    background-color: var(--story-btn-bg-color);
+    color: #000000;
+    font-family: 'SF';
+    font-size: 1vw;
+    text-decoration: none;
 }
 
 .story-slide-inner {
-	display: flex;
-	flex-direction: column-reverse;
-	height: 100%;
-	padding: 24px;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    padding: 24px;
 }
 
 .story-slide__main .story-slide-inner {
-	flex-direction: column;
+    flex-direction: column;
 }
 
 .story-slide__main .content>h3 {
-	font-size: 2vw;
+    font-size: 2vw;
 }
 
 .story-slider-extra {
-	margin-top: 16px;
-	user-select: none;
+    margin-top: 16px;
+    user-select: none;
 }
 
 .story-slider-extra>.date {
-	font-family: 'Arial', sans-serif;
-	font-weight: 400;
-	font-size: 14px;
-	color: var(--text-toneless-color);
-	opacity: 0.72;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--text-toneless-color);
+    opacity: 0.72;
 }
 
 /* Swiper customization */
 .swiper {
-	margin-left: 0 !important;
-	margin-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
