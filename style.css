@@ -5,6 +5,37 @@
     src: url('https://slavaios.github.io/crm-t-bank/fonts/SF-Pro.ttf');
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100vh; /* Полная высота экрана */
+}
+
+.swiper-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
 :root {
     --story-bg-color: #c1aea0;
     --story-btn-bg-color: #ffdd2c;
